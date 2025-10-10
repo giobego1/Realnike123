@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="output-onlinepngtools.ico" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Nike.png" alt="Logo"></a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search by shoe name">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Login.html">Login</a>
+            <a href="grid.html">Products</a>
+            <a href="cart.html" id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            
+        </nav>
+
+        <label for="burger-toggle" class="burger-label"><i class="fas fa-bars"></i></label>
+    </header>
+
+    <input type="checkbox" id="burger-toggle" hidden>
+    <div class="burger-menu-content">
+        <a href='index.html'>Home</a>
+        <a href='login.html'>Login</a>
+        <a href='grid.html'>Products</a>
+        <a href="cart.html">Cart</a>
+    </div>
+
+    <main>
+        <section class="image-container">
+            <img class="main-background"
+                src="https://static.wixstatic.com/media/c837a6_977fd116499b43ae8f309afaf18cbade~mv2.jpg"
+                alt="background">
+            <div class="text-overlay">
+                <h1>Just Do It</h1>
+                <p>Premium Athletic Footwear</p>
+                <a class='button' href='grid.html'>Shop Now</a>
+            </div>
+        </section>
+
+        <section class="product-section">
+            <h2>Best Sellers</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/a13c263c-12b7-499f-9f77-848cd0600cf4/NIKE+INTERACT+RUN.png"
+                        alt="Sustainable Strider">
+                    <h3>Sustainable Strider</h3>
+                    <p>$150.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/963bd9d0-1196-46e8-a6ac-f52824e3bb42/NIKE+AIR+MAX+IMPACT+4.png"
+                        alt="Distance Elite">
+                    <h3>Distance Elite</h3>
+                    <p>$140.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/9c677c05-b270-48f6-b656-1430145362a2/NIKE+WAFFLE+NAV.png"
+                        alt="Sprint Champ">
+                    <h3>Power Drift</h3>
+                    <p>$180.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/a425c553-fb4b-4beb-ab47-c3ed610230e1/W+AIR+MAX+90+FUTURA.png"
+                        alt="Junior Sport">
+                    <h3>Junior Sport</h3>
+                    <p>$72.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png"
+                        alt="Sprint Champ">
+                    <h3>Air Force</h3>
+                    <p>$180.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/3f3e7049-5c99-428c-abcd-e246b086f2ed/AIR+FORCE+1+%2707.png"
+                        alt="Junior Sport">
+                    <h3>Air Force III</h3>
+                    <p>$72.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Nike, Inc. All Rights Reserved</p>
+            <p>Nike Privacy Policy</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

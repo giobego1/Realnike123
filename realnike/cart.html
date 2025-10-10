@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="cart.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" href="output-onlinepngtools.ico" type="image/png">
+</head>
+<body>
+
+<input type="checkbox" id="burger-toggle" hidden />
+
+<header>
+  <div class="logo">
+    <a href="index.html"><img src="Nike.png" alt="Logo"></a>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search by shoe name">
+    <i class="fas fa-search"></i>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Login.html">Login</a>
+    <a href="grid.html">Products</a>
+    <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+  </nav>
+
+  <label for="burger-toggle" class="burger-label"><i class="fas fa-bars"></i></label>
+</header>
+
+<div class="burger-menu-content">
+  <a href="index.html">Home</a>
+  <a href="Login.html">Login</a>
+  <a href="grid.html">Products</a>
+  <a href="cart.html">Cart</a>
+</div>
+
+<main>
+  <section class="cart-page">
+    <h2>Your Cart</h2>
+    <div id="cart-items" class="cart-items-container"></div>
+
+    <div class="cart-total-container">
+      <span>Total: $<span id="cart-total">0.00</span></span>
+      <button id="buy-now">Buy Now</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <p>&copy; 2025 Nike, Inc. All Rights Reserved</p>
+    <p>Nike Privacy Policy</p>
+  </div>
+</footer>
+
+<script src="cart.js"></script>
+</body>
+</html>
